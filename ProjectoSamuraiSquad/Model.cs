@@ -69,5 +69,12 @@ namespace ProjectoSamuraiSquad
 			pdfGerado();
 		}
     }
+
+	public class Utilizador
+	{
+		string nome = "";
+		string morada = "";
+		int nif;
+	}
 }
 

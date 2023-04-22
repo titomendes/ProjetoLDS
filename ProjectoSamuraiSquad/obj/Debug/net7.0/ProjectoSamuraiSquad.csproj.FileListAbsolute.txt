@@ -1,0 +1,15 @@
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.deps.json
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.runtimeconfig.json
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.dll
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.pdb
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.AssemblyReference.cache
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.AssemblyInfoInputs.cache
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.AssemblyInfo.cs
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.CoreCompileInputs.cache
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.dll
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/refint/ProjectoSamuraiSquad.dll
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.pdb
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.genruntimeconfig.cache
+/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ref/ProjectoSamuraiSquad.dll

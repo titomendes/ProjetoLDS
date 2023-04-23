@@ -8,7 +8,10 @@ namespace ProjectoSamuraiSquad
 		private Model model;
 		private bool clienteQuerPdf = false;
 
-		public delegate void DadosReparacao(ref string dados);
+		private List<Model.Telemovel> telemoveis;
+        private List<Model.Reparacao> reparacoes;
+
+        public delegate void DadosReparacao(ref string dados);
 		public event DadosReparacao enviarDadosReparacao;
 		public event DadosReparacao enviarDadosUtilizador;
 		public delegate void PedirOrcamento();
@@ -17,9 +20,13 @@ namespace ProjectoSamuraiSquad
 		public event GerarPdf pedirPdf;
 		public delegate void Encerrar();
 		public event Encerrar ordemEncerrar;
+		public delegate void SolicitarListaTelemovel();
+		public event SolicitarListaTelemovel solicitarDadosTelemovel;
+        public delegate void SolicitarListaReparacao();
+        public event SolicitarListaReparacao solicitarDadosReparacao;
 
 
-		public View(Model m) {
+        public View(Model m) {
 			model = m;
 		}
 
@@ -28,20 +35,39 @@ namespace ProjectoSamuraiSquad
 
 			Console.WriteLine("Bem vindo. ");
 
-			string dadosReparação = "", dadosUtilizador = "";
+			string dadosReparacao = "", dadosUtilizador = "";
 
-			/* Pedir marca, modelo, reparação ao cliente
-			 * Pedir dados pessoais ao cliente
-			 * Enviar informação ao Controller
-			 */
+			solicitarDadosTelemovel();
+			solicitarDadosReparacao();
 
-			enviarDadosReparacao(ref dadosReparação);
+            model.enviarListaTelemovel += IniciarListaTelemovel;
+			model.enviarListaReparacao += IniciarListaReparacao;
+
+			Console.WriteLine("Escolha uma marca e modelo.");
+
+			foreach (var telemovel in telemoveis)
+			{
+				Console.WriteLine("Marca: {0} Modelo: {1}", telemovel.marca, telemovel.modelo);
+			}
+
+
+            enviarDadosReparacao(ref dadosReparacao);
 			enviarDadosUtilizador(ref dadosUtilizador);
 
 			model.dadosForamAtualizados += SolicitarOrcamento;
 		}
 
-		public void SolicitarOrcamento()
+		public void IniciarListaTelemovel (ref List<Model.Telemovel> t)
+		{
+			telemoveis = t;
+		}
+
+        public void IniciarListaReparacao(ref List<Model.Reparacao> r)
+        {
+            reparacoes = r;
+        }
+
+        public void SolicitarOrcamento()
 		{
 			solicitarOrcamento();
 		}

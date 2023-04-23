@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
+      "projectUniqueName": "/Users/Gui/UNIVERSIDADE ABERTA/ProjetoSamuraiSquad/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
       "projectName": "ProjectoSamuraiSquad",
-      "projectPath": "/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
+      "projectPath": "/Users/Gui/UNIVERSIDADE ABERTA/ProjetoSamuraiSquad/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
       "packagesPath": "/Users/Gui/.nuget/packages/",
-      "outputPath": "/Users/Gui/Projects/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/",
+      "outputPath": "/Users/Gui/UNIVERSIDADE ABERTA/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Gui/.nuget/NuGet/NuGet.Config"

@@ -5,8 +5,8 @@ namespace ProjectoSamuraiSquad
 {
 	public class Controller
 	{
-		private Model model;
-		private View view;
+		private Model? model;
+		private View? view;
 
 		public delegate void AtivacaoInterface();
 		public event AtivacaoInterface AtivarInterface;
@@ -28,8 +28,8 @@ namespace ProjectoSamuraiSquad
 
 			view.pedirPdf += model.CriarPdf;
 
-			view.ordemEncerrar += Encerrar();
-            model.pdfGerado += Encerrar();
+			view.ordemEncerrar += Encerrar;
+            model.pdfGerado += Encerrar;
         }
 
 		public void Encerrar()

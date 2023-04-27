@@ -1,0 +1,15 @@
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Release\net7.0\ProjectoSamuraiSquad.exe
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Release\net7.0\ProjectoSamuraiSquad.deps.json
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Release\net7.0\ProjectoSamuraiSquad.runtimeconfig.json
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Release\net7.0\ProjectoSamuraiSquad.dll
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Release\net7.0\ProjectoSamuraiSquad.pdb
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Release\net7.0\ProjectoSamuraiSquad.csproj.AssemblyReference.cache
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Release\net7.0\ProjectoSamuraiSquad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Release\net7.0\ProjectoSamuraiSquad.AssemblyInfoInputs.cache
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Release\net7.0\ProjectoSamuraiSquad.AssemblyInfo.cs
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Release\net7.0\ProjectoSamuraiSquad.csproj.CoreCompileInputs.cache
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Release\net7.0\ProjectoSamuraiSquad.dll
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Release\net7.0\refint\ProjectoSamuraiSquad.dll
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Release\net7.0\ProjectoSamuraiSquad.pdb
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Release\net7.0\ProjectoSamuraiSquad.genruntimeconfig.cache
+C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Release\net7.0\ref\ProjectoSamuraiSquad.dll

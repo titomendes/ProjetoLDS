@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace ProjectoSamuraiSquad
 {
     public class Controller
@@ -7,29 +8,39 @@ namespace ProjectoSamuraiSquad
         private Model model;
         private View view;
 
-        public Controller(Model model, View view)
-        {
-            this.model = model;
-            this.view = view;
 
-            model.AtivarInterface += View_AtivarInterface;
-            model.DadosForamAtualizados += View_DadosForamAtualizados;
-            model.EnviarDadosOrcamento += View_EnviarDadosOrcamento;
+        public delegate void AtivacaoInterface();
+        public event AtivacaoInterface AtivarInterface;
+
+        //Eventos e delegados para comunicação
+
+        public void IniciarPrograma()
+        {
+            view = new View(model);
+            model = new Model(view);
+
+
+            AtivarInterface += view.AtivarInterface;
+
+            view.enviarDadosReparacao += model.UpdateInfoReparacao;
+            view.enviarDadosUtilizador += model.updateInfoUtilizador;
+
+            view.solicitarOrcamento += model.EnviarDadosOrcamento;
+
+            model.enviarDadosOrcamento += view.ApresentarOrcamento;
+
+            view.pedirPdf += model.CriarPdf;
+
+            //view.ordemEncerrar += Encerrar();
+            //model.pdfGerado += Encerrar();
+            AtivarInterface();
         }
 
-        private void View_AtivarInterface()
-        {
-            // Lógica para ativar a interface
-        }
 
-        private void View_DadosForamAtualizados()
+        public void Encerrar()
         {
-            // Lógica para tratar quando os dados foram atualizados
-        }
-
-        private void View_EnviarDadosOrcamento()
-        {
-            // Lógica para enviar dados de orçamento
+            view.MostrarMSGFinal();
+            Environment.Exit(0);
         }
     }
 }

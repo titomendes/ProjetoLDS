@@ -4,28 +4,71 @@ namespace ProjectoSamuraiSquad
 {
     public class Model
     {
-        public event Action AtivarInterface;
-        public event Action DadosForamAtualizados;
-        public event Action EnviarDadosOrcamento;
+        private View view;
 
-        public void EnviarDadosTelemovel()
+        private bool dadosUtilizador = false;
+        private bool dadosReparacao = false;
+
+        public delegate void dadosAtualizados();
+        public event dadosAtualizados dadosForamAtualizados;
+        public delegate void dadosOrcamento(ref int valor);
+        public event dadosOrcamento enviarDadosOrcamento;
+        public delegate void PdfGerado();
+        public event PdfGerado pdfGerado;
+
+        public Model(View v)
         {
-            // Lógica para enviar dados de telemóvel
+            view = v;
         }
 
-        public void EnviarDadosReparacao()
+
+        public void UpdateInfoReparacao(ref string dados)
         {
-            // Lógica para enviar dados de reparação
+            /* Fazer update aos dados da reparação e actualizar dados Reparacao
+			para True e se dados Utilizar também já for True enviar evento a
+			avisar */
+
+            dadosReparacao = true;
+
+            if (dadosUtilizador && dadosForamAtualizados != null) // Verifica se dadosForamAtualizados não é nulo antes de chamar o evento
+            {
+                dadosForamAtualizados();
+            }
+        
+
+    }
+
+        public void updateInfoUtilizador(ref string dados)
+        {
+            /* Fazer update aos dados da reparação e actualizar dados Reparacao
+			para True e se dados Utilizar também já for True enviar evento a
+			avisar */
+
+            dadosUtilizador = true;
+
+            if (dadosReparacao && dadosForamAtualizados != null) // Verifica se dadosForamAtualizados não é nulo antes de chamar o evento
+            {
+                dadosForamAtualizados();
+            }
+
         }
 
-        public void UpdateInfoReparacao()
+        public void EnviarDadosOrcamento()
         {
-            // Lógica para atualizar informações de reparação
+            /*Processar os dados de utilizador e de reparação e enviar
+			 o valor do orcamento*/
+
+            int valorOrcamento = 0;
+
+            enviarDadosOrcamento(ref valorOrcamento);
         }
 
         public void CriarPdf()
         {
-            // Lógica para criar arquivo PDF
+            /* Código de implementação da API Pdf Sharp para criar o Pdf com as
+			 * informações necessárias. */
+
+            pdfGerado();
         }
     }
 }

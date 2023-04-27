@@ -4,34 +4,91 @@
 namespace ProjectoSamuraiSquad
 {
     public class View
-
     {
         private Model model;
+        private bool clienteQuerPdf = false;
 
-        public View(Model model)
+        public delegate void DadosReparacao(ref string dados);
+        public event DadosReparacao enviarDadosReparacao;
+        public event DadosReparacao enviarDadosUtilizador;
+        public delegate void PedirOrcamento();
+        public event PedirOrcamento solicitarOrcamento;
+        public delegate void GerarPdf();
+        public event GerarPdf pedirPdf;
+        public delegate void Encerrar();
+        public event Encerrar ordemEncerrar;
+
+
+        public View(Model m)
         {
-            this.model = model;
+            model = m;
         }
 
-        public void IniciarListaTelemovel()
+        public void AtivarInterface()
         {
-            model.EnviarDadosTelemovel();
+
+            Console.WriteLine("Bem vindo. ");
+
+            string dadosReparação = "";
+            string dadosUtilizador = "";
+
+            Console.WriteLine("Insira a marca do equipamento:");
+            string dadosReparacao = Console.ReadLine();
+
+            Console.WriteLine("Insira o modelo do equipamento:");
+            dadosReparacao = Console.ReadLine();
+            Console.WriteLine("Insira o tipo de reparação pretendida:");
+            dadosReparacao = Console.ReadLine();
+
+            Console.WriteLine("Insira o seu primeiro e ultimo nome:");
+             dadosUtilizador = Console.ReadLine();
+
+            Console.WriteLine("Insira o seu email:");
+            dadosUtilizador = Console.ReadLine();
+
+            Console.WriteLine("Insira o seu contacto telefonico:");
+            dadosUtilizador = Console.ReadLine();
+
+            Console.WriteLine("Aguarde uns dias pela valiaçao da disponiblidade de reparação e possivel orçamento");
+
+            /* Pedir marca, modelo, reparação ao cliente
+			 * Pedir dados pessoais ao cliente
+			 * Enviar informação ao Controller
+			 */
+
+            enviarDadosReparacao(ref dadosReparação);
+            enviarDadosUtilizador(ref dadosUtilizador);
+
+            if (model != null)
+            {
+                model.dadosForamAtualizados += SolicitarOrcamento;
+            }
+
         }
 
-        public void IniciarListaReparacao()
+        public void SolicitarOrcamento()
         {
-            model.EnviarDadosReparacao();
+            solicitarOrcamento();
         }
 
-        public void UpdateInfoReparacao()
+        public void ApresentarOrcamento(ref int valor)
         {
-            model.UpdateInfoReparacao();
+            /* Apresentar o valor ao cliente e perguntar se quer gerar pdf
+			 se não quiser mandar encerrar o programa.*/
+
+            if (clienteQuerPdf)
+            {
+                pedirPdf();
+            }
+            else
+            {
+                ordemEncerrar();
+            }
         }
 
-        public void CriarPdf()
+        public void MostrarMSGFinal()
         {
-            model.CriarPdf();
+            Console.WriteLine("Adeus!");
         }
     }
 }
-

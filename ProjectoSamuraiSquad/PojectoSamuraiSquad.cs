@@ -1,19 +1,14 @@
 ﻿using System;
 
+
 namespace ProjectoSamuraiSquad
 {
-    public class Program
+    class ProjectoSamuraiSquad
     {
         static void Main(string[] args)
         {
-            Model model = new Model();
-            View view = new View(model);
-            Controller controller = new Controller(model, view);
-
-            // Lógica do programa
+            Controller controller = new Controller();
+            controller.IniciarPrograma();
         }
     }
 }
-
-
-// Teste de push

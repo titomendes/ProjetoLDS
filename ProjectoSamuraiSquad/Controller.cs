@@ -1,46 +1,62 @@
 ﻿using System;
+using System.Collections.Generic;
+using ExemploEventosDelegados.Models;
+using ExemploEventosDelegados.Views;
+using ExemploEventosDelegados.Exceptions;
 
-
-namespace ProjectoSamuraiSquad
+namespace ExemploEventosDelegados.Controllers
 {
-    public class Controller
+    public class TelefoneController
     {
-        private Model model;
-        private View view;
+        private List<TelefoneMarca> telefones;
+        private TelefoneView view;
+        private TelefoneModel model;
+        private bool sair = false;
+
+        public delegate void Interface ();
+        public event Interface AtivarInterface;
 
 
-        public delegate void AtivacaoInterface();
-        public event AtivacaoInterface AtivarInterface;
-
-        //Eventos e delegados para comunicação
-
-        public void IniciarPrograma()
+        public TelefoneController( TelefoneView view, TelefoneModel model)
         {
-            view = new View(model);
-            model = new Model(view);
-
-
-            AtivarInterface += view.AtivarInterface;
-
-            view.enviarDadosReparacao += model.UpdateInfoReparacao;
-            view.enviarDadosUtilizador += model.updateInfoUtilizador;
-
-            view.solicitarOrcamento += model.EnviarDadosOrcamento;
-
-            model.enviarDadosOrcamento += view.ApresentarOrcamento;
-
-            view.pedirPdf += model.CriarPdf;
-
-            //view.ordemEncerrar += Encerrar();
-            //model.pdfGerado += Encerrar();
-            AtivarInterface();
+            this.view = view;
+            this.model = model;
         }
 
-
-        public void Encerrar()
+        public void Iniciar()
         {
-            view.MostrarMSGFinal();
-            Environment.Exit(0);
+            // Iniciar o view e o model para terem conhecimento um do outro
+            view.Iniciar(model);
+            model.Iniciar(view);
+     
+            AtivarInterface += view.InicarInterface;
+            
+            view.PedirListaTelefones += model.EnviarLista;
+
+            view.VerificaMarca += model.VerificaMarca;
+            view.VerificaModelo += model.VerificaModelo;
+
+            view.UtilizadorQuerSair += SairPrograma;
+
+            do
+            {
+                try
+                {
+                    // Inicia a Interface
+                    AtivarInterface();
+                }
+                catch (ExceptionInputInvalido)
+                {
+                    view.EcraErro();
+                }
+
+            } while (!sair);
+          
+        }
+
+        public void SairPrograma()
+        {
+            sair = true;
         }
     }
 }

@@ -1,94 +1,126 @@
 ﻿using System;
+using System.Collections.Generic;
+using ExemploEventosDelegados.Models;
 
-
-namespace ProjectoSamuraiSquad
+namespace ExemploEventosDelegados.Views
 {
-    public class View
+    public class TelefoneView
     {
-        private Model model;
-        private bool clienteQuerPdf = false;
+        private TelefoneModel model;
 
-        public delegate void DadosReparacao(ref string dados);
-        public event DadosReparacao enviarDadosReparacao;
-        public event DadosReparacao enviarDadosUtilizador;
-        public delegate void PedirOrcamento();
-        public event PedirOrcamento solicitarOrcamento;
-        public delegate void GerarPdf();
-        public event GerarPdf pedirPdf;
-        public delegate void Encerrar();
-        public event Encerrar ordemEncerrar;
+        private List<TelefoneMarca> listaTelefones;
 
+        private int marcaIndex = -1;
+        private int modeloIndex = -1;
+        private TelefoneMarca marcaSelecionada;
+        private TelefoneModelo modeloSelecionado;
 
-        public View(Model m)
+        public delegate void PedirInfo (ref List<TelefoneMarca> lista);
+        public event PedirInfo PedirListaTelefones;
+
+        public delegate bool VerificaInputMarca(int n);
+        public event VerificaInputMarca VerificaMarca;
+        public delegate bool VerificaInputModelo(int indexMarca,int indexModelo);
+        public event VerificaInputModelo VerificaModelo;
+
+        public delegate void UtilizadorSai();
+        public event UtilizadorSai UtilizadorQuerSair;
+
+        public void Iniciar(TelefoneModel model)
         {
-            model = m;
+            this.model = model;
+            
         }
 
-        public void AtivarInterface()
+        public void InicarInterface()
         {
+            PedirListaTelefones(ref listaTelefones);
 
-            Console.WriteLine("Bem vindo. ");
+            if (listaTelefones != null) MostrarMarcas(listaTelefones);
 
-            string dadosReparação = "";
-            string dadosUtilizador = "";
+        }
+         
+        public void MostrarMarcas(List<TelefoneMarca> marcas)
+        {
+            Console.WriteLine("Selecione uma marca:");
 
-            Console.WriteLine("Insira a marca do equipamento:");
-            string dadosReparacao = Console.ReadLine();
-
-            Console.WriteLine("Insira o modelo do equipamento:");
-            dadosReparacao = Console.ReadLine();
-            Console.WriteLine("Insira o tipo de reparação pretendida:");
-            dadosReparacao = Console.ReadLine();
-
-            Console.WriteLine("Insira o seu primeiro e ultimo nome:");
-             dadosUtilizador = Console.ReadLine();
-
-            Console.WriteLine("Insira o seu email:");
-            dadosUtilizador = Console.ReadLine();
-
-            Console.WriteLine("Insira o seu contacto telefonico:");
-            dadosUtilizador = Console.ReadLine();
-
-            Console.WriteLine("Aguarde uns dias pela valiaçao da disponiblidade de reparação e possivel orçamento");
-
-            /* Pedir marca, modelo, reparação ao cliente
-			 * Pedir dados pessoais ao cliente
-			 * Enviar informação ao Controller
-			 */
-
-            enviarDadosReparacao(ref dadosReparação);
-            enviarDadosUtilizador(ref dadosUtilizador);
-
-            if (model != null)
+            for (int i = 0; i < marcas.Count; i++)
             {
-                model.dadosForamAtualizados += SolicitarOrcamento;
+                Console.WriteLine($"{i + 1}. {marcas[i].Nome}");
             }
 
-        }
+            // Aguarda a escolha do usuário
+            ConsoleKeyInfo input = Console.ReadKey();
 
-        public void SolicitarOrcamento()
-        {
-            solicitarOrcamento();
-        }
-
-        public void ApresentarOrcamento(ref int valor)
-        {
-            /* Apresentar o valor ao cliente e perguntar se quer gerar pdf
-			 se não quiser mandar encerrar o programa.*/
-
-            if (clienteQuerPdf)
+            // Converte o input em um índice de marca
+            if (int.TryParse(input.KeyChar.ToString(), out marcaIndex))
             {
-                pedirPdf();
+                marcaIndex--;
             }
             else
             {
-                ordemEncerrar();
+                marcaIndex = -1;
             }
+
+            if (VerificaMarca(marcaIndex)) marcaSelecionada = marcas[marcaIndex];
+
+            Console.Clear();
+            MostrarModelos(marcaSelecionada.Nome, marcaSelecionada.Modelos); 
         }
 
-        public void MostrarMSGFinal()
+        public void MostrarModelos(string nomeMarca, List<TelefoneModelo> modelos)
         {
-            Console.WriteLine("Adeus!");
+            Console.WriteLine($"Modelos disponíveis da marca {nomeMarca}:");
+            for (int i = 0; i < modelos.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {modelos[i].Nome}");
+            }
+
+            // Aguarda a escolha do usuário
+            ConsoleKeyInfo input = Console.ReadKey();
+
+            // Converte o input em um índice de modelo
+            if (int.TryParse(input.KeyChar.ToString(), out modeloIndex))
+            {
+                modeloIndex--;
+            }
+            else
+            {
+                modeloIndex = -1;
+            }
+
+            Console.Clear();
+
+            if (VerificaModelo(marcaIndex, modeloIndex)) modeloSelecionado = marcaSelecionada.Modelos[modeloIndex];
+
+            MostrarTiposDeReparacao(modeloSelecionado);
+        }
+
+        public void MostrarTiposDeReparacao(TelefoneModelo modeloSelecionado)
+        {
+            Console.WriteLine($"Selecione um tipo de reparação para o modelo {modeloSelecionado.Nome}:");
+            foreach (var tipoReparacao in modeloSelecionado.PrecosDeReparacao)
+            {
+                Console.WriteLine($"{tipoReparacao.Key}. Preço: {tipoReparacao.Value}");
+            }
+
+            UtilizadorQuerSair();
+        }
+
+        public void EcraErro()
+        {
+            Console.Clear();
+            Console.WriteLine("O input introduzido é inválido.\n" +
+                "Que pretende fazer?\n" +
+                "1 - Introduzir novamente\n" +
+                "2 - Sair\n");
+
+            ConsoleKeyInfo input = Console.ReadKey();
+            int val;
+            int.TryParse(input.KeyChar.ToString(), out val);
+
+            if (val == 2) UtilizadorQuerSair();
+            else Console.Clear();
         }
     }
 }

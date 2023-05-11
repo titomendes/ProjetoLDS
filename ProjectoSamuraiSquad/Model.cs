@@ -1,74 +1,127 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using ExemploEventosDelegados.Views;
+using ExemploEventosDelegados.Exceptions;
 
-namespace ProjectoSamuraiSquad
+namespace ExemploEventosDelegados.Models
 {
-    public class Model
+    public class TelefoneMarca
     {
-        private View view;
+        public string Nome { get; set; }
+        public List<TelefoneModelo> Modelos { get; set; }
 
-        private bool dadosUtilizador = false;
-        private bool dadosReparacao = false;
-
-        public delegate void dadosAtualizados();
-        public event dadosAtualizados dadosForamAtualizados;
-        public delegate void dadosOrcamento(ref int valor);
-        public event dadosOrcamento enviarDadosOrcamento;
-        public delegate void PdfGerado();
-        public event PdfGerado pdfGerado;
-
-        public Model(View v)
+        public TelefoneMarca(string nome, List<TelefoneModelo> modelos)
         {
-            view = v;
+            Nome = nome;
+            Modelos = modelos;
         }
 
 
-        public void UpdateInfoReparacao(ref string dados)
+        public static List<TelefoneMarca> ObterListaDeMarcasDeTelefone()
         {
-            /* Fazer update aos dados da reparação e actualizar dados Reparacao
-			para True e se dados Utilizar também já for True enviar evento a
-			avisar */
-
-            dadosReparacao = true;
-
-            if (dadosUtilizador && dadosForamAtualizados != null) // Verifica se dadosForamAtualizados não é nulo antes de chamar o evento
+            var modelosApple = new List<TelefoneModelo>
             {
-                dadosForamAtualizados();
-            }
-        
+                new TelefoneModelo("iPhone 12"),
+                new TelefoneModelo("iPhone SE"),
+                new TelefoneModelo("iPhone 11")
+            };
+
+            modelosApple[0].AdicionarTipoDeReparacao("Ecra partido", 100.00m);
+            modelosApple[0].AdicionarTipoDeReparacao("Bateria", 80.00m);
+            modelosApple[1].AdicionarTipoDeReparacao("Ecra partido", 90.00m);
+            modelosApple[1].AdicionarTipoDeReparacao("Alto-falante com problema", 70.00m);
+            modelosApple[2].AdicionarTipoDeReparacao("Ecra partido", 100.00m);
+            modelosApple[2].AdicionarTipoDeReparacao("Bateria", 80.00m);
+            modelosApple[2].AdicionarTipoDeReparacao("Botão partido", 50.00m);
+
+            var modelosSamsung = new List<TelefoneModelo>
+            {
+                new TelefoneModelo("Note 20"),
+                new TelefoneModelo("A51"),
+                new TelefoneModelo("S23")
+            };
+
+            modelosSamsung[0].AdicionarTipoDeReparacao("Ecra partido", 100.00m);
+            modelosSamsung[0].AdicionarTipoDeReparacao("Bateria", 80.00m);
+            modelosSamsung[1].AdicionarTipoDeReparacao("Ecra partido", 90.00m);
+            modelosSamsung[1].AdicionarTipoDeReparacao("Alto-falante com problema", 70.00m);
+            modelosSamsung[2].AdicionarTipoDeReparacao("Ecra partido", 100.00m);
+            modelosSamsung[2].AdicionarTipoDeReparacao("Bateria", 80.00m);
+            modelosSamsung[2].AdicionarTipoDeReparacao("Botão partido", 50.00m);
+
+            var marcas = new List<TelefoneMarca>
+            {
+                new TelefoneMarca("Apple", modelosApple),
+                new TelefoneMarca("Samsung", modelosSamsung)
+            };
+
+            return marcas;
+        }
+
 
     }
 
-        public void updateInfoUtilizador(ref string dados)
+    public class TelefoneModelo
+    {
+        public string Nome { get; set; }
+        public Dictionary<string, decimal> PrecosDeReparacao { get; set; }
+
+        public TelefoneModelo(string nome)
         {
-            /* Fazer update aos dados da reparação e actualizar dados Reparacao
-			para True e se dados Utilizar também já for True enviar evento a
-			avisar */
+            Nome = nome;
+            PrecosDeReparacao = new Dictionary<string, decimal>();
+        }
 
-            dadosUtilizador = true;
+        public void AdicionarTipoDeReparacao(string tipoReparacao, decimal preco)
+        {
+            PrecosDeReparacao[tipoReparacao] = preco;
+        }
+    }
 
-            if (dadosReparacao && dadosForamAtualizados != null) // Verifica se dadosForamAtualizados não é nulo antes de chamar o evento
+    public class TelefoneModel {
+
+        private TelefoneView view;
+        public List<TelefoneMarca>? marcasDeTelefone;
+
+        public void Iniciar (TelefoneView view)
+        {
+            this.view = view;
+            marcasDeTelefone = TelefoneMarca.ObterListaDeMarcasDeTelefone();
+            
+        }
+
+        public void EnviarLista(ref List<TelefoneMarca> lista)
+        {
+            if (marcasDeTelefone != null) lista = (marcasDeTelefone);
+        }
+
+        public bool VerificaMarca(int index)
+        {
+            try
             {
-                dadosForamAtualizados();
+                if (marcasDeTelefone[index] != null) ;
+            }
+            catch 
+            {
+                throw new ExceptionInputInvalido(); 
             }
 
+            return true;
         }
 
-        public void EnviarDadosOrcamento()
+        public bool VerificaModelo(int indexMarca, int indexModelo)
         {
-            /*Processar os dados de utilizador e de reparação e enviar
-			 o valor do orcamento*/
+            try
+            {
+                if (marcasDeTelefone[indexMarca].Modelos[indexModelo] != null) ;
+            }
+            catch
+            {
+                throw new ExceptionInputInvalido();
+            }
 
-            int valorOrcamento = 0;
-
-            enviarDadosOrcamento(ref valorOrcamento);
+            return true;
         }
 
-        public void CriarPdf()
-        {
-            /* Código de implementação da API Pdf Sharp para criar o Pdf com as
-			 * informações necessárias. */
-
-            pdfGerado();
-        }
     }
 }
+

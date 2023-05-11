@@ -8,32 +8,25 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Milton\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/Gui/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Milton\\Source\\Repos\\ProjetoSamuraiSquad\\ProjectoSamuraiSquad\\ProjectoSamuraiSquad.csproj",
+      "projectUniqueName": "/Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
       "projectName": "ProjectoSamuraiSquad",
-      "projectPath": "C:\\Users\\Milton\\Source\\Repos\\ProjetoSamuraiSquad\\ProjectoSamuraiSquad\\ProjectoSamuraiSquad.csproj",
-      "packagesPath": "C:\\Users\\Milton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Milton\\Source\\Repos\\ProjetoSamuraiSquad\\ProjectoSamuraiSquad\\obj\\",
+      "projectPath": "/Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
+      "packagesPath": "/Users/Gui/.nuget/packages/",
+      "outputPath": "/Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Milton\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/Gui/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
       }
     }
   }

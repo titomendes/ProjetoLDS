@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj": {}
+    "/Users/Gui/Downloads/ProjetoSamuraiSquad-6/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj": {}
   },
   "projects": {
-    "/Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj": {
+    "/Users/Gui/Downloads/ProjetoSamuraiSquad-6/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
+        "projectUniqueName": "/Users/Gui/Downloads/ProjetoSamuraiSquad-6/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
         "projectName": "ProjectoSamuraiSquad",
-        "projectPath": "/Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
+        "projectPath": "/Users/Gui/Downloads/ProjetoSamuraiSquad-6/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
         "packagesPath": "/Users/Gui/.nuget/packages/",
-        "outputPath": "/Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/obj/",
+        "outputPath": "/Users/Gui/Downloads/ProjetoSamuraiSquad-6/ProjectoSamuraiSquad/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Gui/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,24 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "NuGet.Packaging": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "PdfSharp": {
+              "target": "Package",
+              "version": "[1.50.5147, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -3,21 +3,15 @@ using ExemploEventosDelegados.Views;
 using ExemploEventosDelegados.Exceptions;
 using System;
 using System.Text.RegularExpressions;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
+using ExemploEventosDelegados.Interfaces;
 
 namespace ExemploEventosDelegados.Models
 {
-    public interface IMarca   //cada marca tem de ter um nome e uma lista de modelos
-    {
-        string nome { get; set; }
-        List<IModelo> Modelos { get; set; }
-    }
+   
 
-    public interface IMarcaPdf
-    {
-        string nome { get; set; }
-    }
-
-    public class TelefoneMarca : IMarca
+    public class TelefoneMarca : IMarca, IMarcaPdf
     {
         public string nome { get; set; }
         public List<IModelo> Modelos { get; set; }
@@ -27,7 +21,10 @@ namespace ExemploEventosDelegados.Models
             this.nome = nome;
             Modelos = modelos;
         }
-
+        public TelefoneMarca()
+        {
+            
+        }
 
         public static List<IMarca> ObterListaDeMarcasDeTelefone()  //agora as listas são do tipo IModelo
         {
@@ -73,22 +70,7 @@ namespace ExemploEventosDelegados.Models
 
     }
 
-    public interface IModeloPdf  //interface do modelo para enviar parao pdf, só é preciso o nome
-    {
-        string nome { get; set; }
-    }
-
-    public interface IModelo   //cada modelo tem de ter nome e uma lista de reparações
-    {                           //com a interface pode se criar outros tipos de modelo, desde que implementem este contrato
-                                //coloquei a função de adiconarTipoDeReparação no contrato porque se não para a usar tinha de fazer um cast para cada modelo para poder usar a função
-        string nome { get; set; }
-        Dictionary<string, decimal> PrecosDeReparacao { get; set; }
-
-        void AdicionarTipoDeReparacao(string tipoReparacao, decimal preco);
-
-        public Reparacao selecionaReparacao(int n, Dictionary<string, decimal> listaReparacoes);
-
-    }
+   
     public class TelefoneModelo : IModelo, IModeloPdf   //implementa a interface
     {                                          //vou verificar a reparação aqui, já que a lista está aqui
         public string nome { get; set; }
@@ -131,14 +113,11 @@ namespace ExemploEventosDelegados.Models
     public class TelefoneModel
     {
 
-        private TelefoneView view;
         public List<IMarca>? marcasDeTelefone;  
 
-        public void Iniciar(TelefoneView view)
+        public void Iniciar()
         {
-            this.view = view;
             marcasDeTelefone = TelefoneMarca.ObterListaDeMarcasDeTelefone();
-
         }
 
         public void EnviarLista(ref List<IMarca> lista)   //enviar lista de interfaces de marca
@@ -175,18 +154,9 @@ namespace ExemploEventosDelegados.Models
         }
 
     }
-    public interface ITexto
-    {
+ 
 
-        bool verificaTexto(string texto);
-        bool verificaTextoEmail(string texto);
-        bool VerificaContato(string contato);
-    }
-
-
-
-
-    public class Texto : ITexto  //implementa as duas interfaces caso se queira validar diferentes tipos de texto
+    public class Texto
     {
         public string texto { get; set; }
 
@@ -224,23 +194,99 @@ namespace ExemploEventosDelegados.Models
         public decimal preco { get; set; }
     }
 
-    public interface ICliente   //interface do cliente, tem de ter nome email e contacto
-    {
-        string nome { get; set; }
-        string email { get; set; }
-        int contacto { get; set; }
-    }
-    public class Cliente : ICliente
+    
+    public class Cliente 
     {
         public string nome { get; set; }
         public string email { get; set; }
-        public int contacto { get; set; }
+        public string contacto { get; set; }
 
-        public Cliente(string nome, string email, int contacto)
+        public Cliente(string nome, string email, string contacto)
         {
             this.nome = nome;
             this.email = email;
             this.contacto = contacto;
+        }
+    }
+
+    public class Equipamento
+    {
+        public IMarcaPdf marca { get; set; }
+        public IModeloPdf modelo { get; set; }
+        public Cliente cliente { get; set; }
+        public Reparacao reparacao { get; set; }
+
+        public Equipamento(IMarcaPdf marca, IModeloPdf modelo, Reparacao reparacao, Cliente cliente)
+        {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.cliente = cliente;
+            this.reparacao = reparacao;
+        }
+    }
+
+    public class OrcamentoPdf  //classe que gera o orçamento em pdf
+    {
+
+        //evento e delegado para a avisar que o orçamento esta pronto e chamar a função de enviar o email
+       
+      
+        public bool GerarRelatorioPDF(Equipamento equipamento,string nomeArquivo)
+        {
+
+            nomeArquivo = "Relatorio.pdf";
+            using (PdfDocument document = new PdfDocument())
+            {
+                PdfPage page = document.AddPage();
+                XGraphics gfx = XGraphics.FromPdfPage(page);
+                XFont font = new XFont("Arial", 12);
+
+                int yOffset = 60;
+
+                // Coloca a reparação no PD
+                gfx.DrawString("Marca:", font, XBrushes.Black, new XRect(10, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                gfx.DrawString(equipamento.marca.nome, font, XBrushes.Black, new XRect(150, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                yOffset += 20;
+
+                gfx.DrawString("Modelo:", font, XBrushes.Black, new XRect(10, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                gfx.DrawString(equipamento.modelo.nome, font, XBrushes.Black, new XRect(150, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                yOffset += 20;
+
+
+                gfx.DrawString("Tipo de reparação selecionado:", font, XBrushes.Black, new XRect(10, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                gfx.DrawString(equipamento.reparacao.descricao, font, XBrushes.Black, new XRect(180, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                yOffset += 20;
+
+                gfx.DrawString("Preço:", font, XBrushes.Black, new XRect(10, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                gfx.DrawString(equipamento.reparacao.preco.ToString("C"), font, XBrushes.Black, new XRect(150, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                yOffset += 20;
+
+                gfx.DrawString("Cliente:", font, XBrushes.Black, new XRect(10, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                gfx.DrawString(equipamento.cliente.nome, font, XBrushes.Black, new XRect(150, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                yOffset += 20;
+
+                gfx.DrawString("Contacto:", font, XBrushes.Black, new XRect(10, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                gfx.DrawString(equipamento.cliente.contacto, font, XBrushes.Black, new XRect(150, yOffset, page.Width, 20), XStringFormats.TopLeft);
+                yOffset += 20;
+
+
+
+                document.Save(nomeArquivo);
+
+            }
+
+            Console.WriteLine($"Relatório gerado em {nomeArquivo}.");
+
+          
+
+            return true;
+        }
+
+       
+
+        public OrcamentoPdf()
+        {
+
         }
     }
 

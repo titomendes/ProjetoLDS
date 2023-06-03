@@ -58,77 +58,210 @@ C:/Users/Milton/Source/Repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/
 /Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.pdb
 /Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.genruntimeconfig.cache
 /Users/Gui/Downloads/ProjetoSamuraiSquad-1/ProjectoSamuraiSquad/obj/Debug/net7.0/ref/ProjectoSamuraiSquad.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.exe
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.deps.json
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.runtimeconfig.json
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.pdb
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.csproj.AssemblyReference.cache
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.AssemblyInfoInputs.cache
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.AssemblyInfo.cs
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.csproj.CoreCompileInputs.cache
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\refint\ProjectoSamuraiSquad.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.pdb
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.genruntimeconfig.cache
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ref\ProjectoSamuraiSquad.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\Newtonsoft.Json.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Common.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Configuration.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Frameworks.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Packaging.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Versioning.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\PdfSharp.Charting.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\PdfSharp.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\System.Drawing.Common.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\de\PdfSharp.Charting.resources.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\de\PdfSharp.resources.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.csproj.CopyComplete
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\MailKit.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\MimeKit.dll
-C:\Users\Milton\source\repos\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.csproj.AssemblyReference.cache
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.AssemblyInfoInputs.cache
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.AssemblyInfo.cs
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.csproj.CoreCompileInputs.cache
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\refint\ProjectoSamuraiSquad.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.pdb
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.exe
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.deps.json
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.runtimeconfig.json
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.pdb
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\MailKit.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\MimeKit.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\Newtonsoft.Json.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Common.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Configuration.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Frameworks.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Packaging.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Versioning.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\PdfSharp.Charting.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\PdfSharp.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\System.Drawing.Common.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\de\PdfSharp.Charting.resources.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\de\PdfSharp.resources.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.csproj.CopyComplete
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.genruntimeconfig.cache
-C:\Users\tito_\OneDrive\Área de Trabalho\New folder\ProjetoSamuraiSquad\ProjectoSamuraiSquad\obj\Debug\net7.0\ref\ProjectoSamuraiSquad.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/Newtonsoft.Json.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Common.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Configuration.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Frameworks.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Packaging.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Versioning.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/PdfSharp.Charting.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/PdfSharp.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Drawing.Common.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/de/PdfSharp.Charting.resources.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/de/PdfSharp.resources.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.CopyComplete
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/BouncyCastle.Cryptography.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/MailKit.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/MimeKit.dll
+C:/Users/Milton/source/repos/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.AssemblyReference.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.AssemblyInfoInputs.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.AssemblyInfo.cs
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.CoreCompileInputs.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/refint/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.pdb
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.exe
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.deps.json
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.runtimeconfig.json
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.pdb
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/BouncyCastle.Cryptography.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/MailKit.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/MimeKit.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/Newtonsoft.Json.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Common.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Configuration.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Frameworks.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Packaging.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Versioning.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/PdfSharp.Charting.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/PdfSharp.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Drawing.Common.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/de/PdfSharp.Charting.resources.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/de/PdfSharp.resources.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.CopyComplete
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.genruntimeconfig.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ref/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.exe
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.deps.json
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.runtimeconfig.json
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.pdb
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/BouncyCastle.Cryptography.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/MailKit.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/MimeKit.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/Newtonsoft.Json.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Common.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Configuration.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Frameworks.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Packaging.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Versioning.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/PdfSharp.Charting.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/PdfSharp.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Drawing.Common.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/de/PdfSharp.Charting.resources.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/de/PdfSharp.resources.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.AssemblyReference.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.AssemblyInfoInputs.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.AssemblyInfo.cs
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.CoreCompileInputs.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.CopyComplete
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/refint/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.pdb
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.genruntimeconfig.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder - Copy/ProjetoSamuraiSquad/ProjectoSamuraiSquad/obj/Debug/net7.0/ref/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.exe
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.deps.json
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.runtimeconfig.json
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.pdb
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/BouncyCastle.Cryptography.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/MailKit.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/MimeKit.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/Newtonsoft.Json.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Common.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Configuration.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Frameworks.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Packaging.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Versioning.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/PdfSharp.Charting.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/PdfSharp.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Drawing.Common.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/de/PdfSharp.Charting.resources.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/de/PdfSharp.resources.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.AssemblyReference.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.AssemblyInfoInputs.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.AssemblyInfo.cs
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.CoreCompileInputs.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.CopyComplete
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/refint/ProjectoSamuraiSquad.dll
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.pdb
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.genruntimeconfig.cache
+C:/Users/tito_/OneDrive/Área de Trabalho/New folder/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ref/ProjectoSamuraiSquad.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.deps.json
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.runtimeconfig.json
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/ProjectoSamuraiSquad.pdb
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/BouncyCastle.Cryptography.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/MailKit.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/MimeKit.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Common.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Configuration.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Frameworks.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Packaging.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/NuGet.Versioning.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/PdfSharp.Charting.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/PdfSharp.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Drawing.Common.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/de/PdfSharp.Charting.resources.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/de/PdfSharp.resources.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.AssemblyReference.cache
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.AssemblyInfoInputs.cache
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.AssemblyInfo.cs
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.CoreCompileInputs.cache
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.csproj.CopyComplete
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/refint/ProjectoSamuraiSquad.dll
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.pdb
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ProjectoSamuraiSquad.genruntimeconfig.cache
+/Users/Gui/Downloads/ProjetoSamuraiSquad - Copy/ProjectoSamuraiSquad/obj/Debug/net7.0/ref/ProjectoSamuraiSquad.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.exe
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.deps.json
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.runtimeconfig.json
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\ProjectoSamuraiSquad.pdb
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\MailKit.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\MimeKit.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Common.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Configuration.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Frameworks.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Packaging.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\NuGet.Versioning.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\PdfSharp.Charting.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\PdfSharp.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\de\PdfSharp.Charting.resources.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\de\PdfSharp.resources.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.csproj.AssemblyReference.cache
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.AssemblyInfoInputs.cache
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.AssemblyInfo.cs
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.csproj.CoreCompileInputs.cache
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.csproj.CopyComplete
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\refint\ProjectoSamuraiSquad.dll
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.pdb
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\ProjectoSamuraiSquad.genruntimeconfig.cache
+C:\Users\tito_\OneDrive\Área de Trabalho\New folder (2)\ProjectoSamuraiSquad\obj\Debug\net7.0\ref\ProjectoSamuraiSquad.dll

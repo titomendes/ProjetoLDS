@@ -4,18 +4,16 @@ using System.Net.Mail;
 using System.Reflection;
 using System.Text;
 using ExemploEventosDelegados.Models;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
+
 using MimeKit;
 using MailKit.Net.Smtp;
 using ExemploEventosDelegados.Exceptions;
+using ExemploEventosDelegados.Interfaces;
 
 namespace ExemploEventosDelegados.Views
 {
     public class TelefoneView
     {
-        private TelefoneModel model;
-
         private List<IMarca> listaTelefones;
         private Reparacao reparacao;   //reparação
         private Cliente cliente;   //cliente
@@ -29,6 +27,9 @@ namespace ExemploEventosDelegados.Views
         private IModelo modeloSelecionado;
         private IModeloPdf modeloPdf;    //modelo pdf a enviar para o pdf
 
+        private OrcamentoPdf orcamentoPdf; //objeto para receber os dados do equipamento
+        private Equipamento equipamento;  //vai receber a marca modelo reapração e cliente
+
         public delegate void PedirInfo(ref List<IMarca> lista);
         public event PedirInfo PedirListaTelefones;
 
@@ -40,15 +41,14 @@ namespace ExemploEventosDelegados.Views
         public delegate Reparacao SelecionarReparacao(int n, Dictionary<string, decimal> listaReparacoes);     //delegado e evento para selecionar a reparacao
         public event SelecionarReparacao ReparacaoSelecionada;
 
+        public delegate bool GeraRelatorio(Equipamento equipamento,string nomeArquivo);   //delegado e evento para quando o equipamento estiver completo para o orçamento
+        public event GeraRelatorio EquipamentoGerado;
 
         public delegate void UtilizadorSai();
         public event UtilizadorSai UtilizadorQuerSair;
 
-        public void Iniciar(TelefoneModel model)
-        {
-            this.model = model;
-
-        }
+        public delegate void EnviarOrcamento(string emailCliente, string nomeArquivo);
+        public event EnviarOrcamento OrcamentoPronto;
 
         public void InicarInterface()
         {
@@ -114,10 +114,11 @@ namespace ExemploEventosDelegados.Views
             if (VerificaModelo(marcaIndex, modeloIndex))
             {
                 modeloSelecionado = marcaSelecionada.Modelos[modeloIndex];
-                marcaPdf = (IMarcaPdf) marcaSelecionada;
-            }
-           
-
+                marcaPdf = new TelefoneMarca();
+                marcaPdf  = (IMarcaPdf) marcaSelecionada; 
+              
+                
+            }         
 
             MostrarTiposDeReparacao(modeloSelecionado);
         }
@@ -126,95 +127,66 @@ namespace ExemploEventosDelegados.Views
         {
       
 
-            int i = 0;
+            int i = 1;
             int selecao;  // selecionar a reparacao
             Console.WriteLine($"Selecione um tipo de reparação para o modelo {modeloSelecionado.nome}:");
             foreach (var tipoReparacao in modeloSelecionado.PrecosDeReparacao)
             {
-                Console.WriteLine($"{i}{tipoReparacao.Key}. Preço: {tipoReparacao.Value}");
+                Console.WriteLine($"{i}. {tipoReparacao.Key}. Preço: {tipoReparacao.Value}");
                 i++;
             }
-            ConsoleKeyInfo input = Console.ReadKey();
+           ConsoleKeyInfo input = Console.ReadKey();
 
 
-            if (!(int.TryParse(input.KeyChar.ToString(), out selecao)) || selecao < 0 || selecao > i-1)
+            if (!(int.TryParse(input.KeyChar.ToString(), out selecao)) || selecao < 1 || selecao > i - 1)
                 throw new ExceptionInputInvalido();  //so verifica o input
 
-            reparacao = ReparacaoSelecionada(selecao, modeloSelecionado.PrecosDeReparacao);  //reparação criada
+            reparacao = new Reparacao();
+            reparacao = ReparacaoSelecionada(selecao - 1, modeloSelecionado.PrecosDeReparacao);  //reparação criada
+            modeloPdf = new TelefoneModelo();
             modeloPdf =(IModeloPdf) modeloSelecionado;    //coinverte o modelo para modelo pdf pois só precisamos do nome
             Console.Clear();
 
-        //    insereDadosCliente();
+            insereDadosCliente();
 
-            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+       
 
-            GerarRelatorioPDF();  //tenho de enviar a marca,modelo,reparação e cliente
+        
+        }
+
+
+         public void insereDadosCliente()
+         {
+
+             Texto texto = new Texto();     
+             Console.WriteLine("Insira o seu nome");
+             string nome = Console.ReadLine();
+             Console.WriteLine("Insira o seu email");
+             string email = Console.ReadLine();
+             Console.WriteLine("Insira o seu contacto");
+             string contacto = Console.ReadLine();
+             while (!(texto.verificaTexto(nome)) || !(texto.verificaTextoEmail(email)) || !(texto.VerificaContato(contacto)) || string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(contacto)) 
+             {
+                 Console.WriteLine("Dados invalidos, Insira novamente");
+                 insereDadosCliente();
+             }
             
 
 
-        }
+             cliente = new Cliente(nome, email, contacto);   //cliente criado   
 
-        public void insereDadosCliente()
-        {
-            int contacto;
-            ITexto texto = new Texto();     //iniciar um objeto texto que implementa a interface que verifica o nome
-            Console.WriteLine("Insira o seu nome");
-            string nome = Console.ReadLine();
-            Console.WriteLine("Insira o seu email");
-            string email = Console.ReadLine();
-            Console.WriteLine("Insira o seu contacto");
-            string contactoString = Console.ReadLine();
-            while (!(texto.verificaTexto(nome) || texto.verificaTextoEmail(email) || texto.VerificaContato(contactoString)) || string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(contactoString)) ;
-            {
-                Console.WriteLine("Dados invalidos, Insira novamente");
-                insereDadosCliente();
+
+
+             equipamento = new Equipamento(marcaPdf, modeloPdf, reparacao, cliente);
+             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            string nomeArquivo = "Relatorio.pdf";
+            if (EquipamentoGerado(equipamento,nomeArquivo) == true)
+            {        
+                EnviarEmailComRelatorio(email, nomeArquivo);
             }
-            if (!(int.TryParse(contactoString, out contacto)))
-                throw new ExceptionInputInvalido();
 
-
-            cliente = new Cliente(nome, email, contacto);   //cliente criado   
-
-        }
-
-
-        public void GerarRelatorioPDF()
-            {
-            
-            
-            var nomeArquivo = "Relatorio.pdf";
-            using (PdfDocument document = new PdfDocument())
-            {
-                PdfPage page = document.AddPage();
-                XGraphics gfx = XGraphics.FromPdfPage(page);
-                XFont font = new XFont("Arial", 12);
-
-                gfx.DrawString($"Modelo selecionado: {modeloPdf.nome}", font, XBrushes.Black, new XRect(10, 10, page.Width, 20), XStringFormats.TopLeft);
-                gfx.DrawString("Tipo de reparação selecionado:", font, XBrushes.Black, new XRect(10, 40, page.Width, 20), XStringFormats.TopLeft);
-                gfx.DrawString("Preço:", font, XBrushes.Black, new XRect(150, 40, page.Width, 20), XStringFormats.TopLeft);
-
-                int yOffset = 60;
-                
-                     //coloca a reparação no pdf
-                    gfx.DrawString(reparacao.descricao, font, XBrushes.Black, new XRect(10, yOffset, page.Width, 20), XStringFormats.TopLeft);
-                    gfx.DrawString(reparacao.preco.ToString("C"), font, XBrushes.Black, new XRect(150, yOffset, page.Width, 20), XStringFormats.TopLeft);
-                    yOffset += 20;
-                
-             
-
-                document.Save(nomeArquivo);
-         
-}
-
-
-
-
-
-
-    Console.WriteLine($"Relatório gerado em {nomeArquivo}.");
-            
-            EnviarEmailComRelatorio("titodalt@gmail.com", nomeArquivo);
-        }
+         }
+        
 
 
         public void EnviarEmailComRelatorio(string emailCliente, string nomeArquivo)
@@ -241,6 +213,8 @@ namespace ExemploEventosDelegados.Views
             }
 
             Console.WriteLine($"Relatório enviado para o email {emailCliente}.");
+
+            UtilizadorQuerSair();
         }
 
 

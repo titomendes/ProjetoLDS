@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using ExemploEventosDelegados.Models;
 using ExemploEventosDelegados.Views;
 using ExemploEventosDelegados.Exceptions;
+using System.Linq.Expressions;
+using ExemploEventosDelegados.Interfaces;
 
 namespace ExemploEventosDelegados.Controllers
 {
@@ -14,24 +16,24 @@ namespace ExemploEventosDelegados.Controllers
         private bool sair = false;
 
         private IModelo modelo;    // objeto modelo do tipo IModelo
-        private ITexto texto;
+        private Texto texto;
+        private OrcamentoPdf orcamento;  //objeto orcamento para ligar o evento
 
         public delegate void Interface ();
         public event Interface AtivarInterface;
 
 
-        public TelefoneController(TelefoneView view, TelefoneModel model, IModelo modelo)
+        public TelefoneController()
         {
-            this.view = view;
-            this.model = model;
-            this.modelo = modelo;    //inicializar o modelo para aceder a função de selecionar a reparacao
+            this.view =  new TelefoneView();
+            this.model = new TelefoneModel();
+            this.modelo = new TelefoneModelo();    //inicializar o modelo para aceder a função de selecionar a reparacao
+            this.orcamento= new OrcamentoPdf();
         }
 
         public void Iniciar()
         {
-            // Iniciar o view e o model para terem conhecimento um do outro
-            view.Iniciar(model);
-            model.Iniciar(view);
+            model.Iniciar();
      
             AtivarInterface += view.InicarInterface;
             
@@ -42,6 +44,10 @@ namespace ExemploEventosDelegados.Controllers
 
 
             view.ReparacaoSelecionada += modelo.selecionaReparacao;   //evento de reparacao selecionada
+
+            view.EquipamentoGerado += orcamento.GerarRelatorioPDF;  //evento de equipamento pronto para gerar o orçamento
+
+          
 
             view.UtilizadorQuerSair += SairPrograma;
 

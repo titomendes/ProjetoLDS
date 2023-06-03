@@ -861,11 +861,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Gui/Downloads/ProjetoSamuraiSquad-6/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
+      "projectUniqueName": "/Users/Gui/Downloads/ProjectoSamuraiSquad/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
       "projectName": "ProjectoSamuraiSquad",
-      "projectPath": "/Users/Gui/Downloads/ProjetoSamuraiSquad-6/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
+      "projectPath": "/Users/Gui/Downloads/ProjectoSamuraiSquad/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
       "packagesPath": "/Users/Gui/.nuget/packages/",
-      "outputPath": "/Users/Gui/Downloads/ProjetoSamuraiSquad-6/ProjectoSamuraiSquad/obj/",
+      "outputPath": "/Users/Gui/Downloads/ProjectoSamuraiSquad/ProjectoSamuraiSquad/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Gui/.nuget/NuGet/NuGet.Config"
@@ -926,7 +926,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vlWwvbhjfjcjxLQn2y6QikXUqkWXAffGNX+AGsRCB2Z6QDnFKt+uP9pJxcQ6KzZYqstdi2frTkyxuEzuaL8kTQ==",
+  "dgSpecHash": "TKduJaVq8Up2+rpLp3PCRxvLVPcdtvjSAUm1KCtgVY4T2Uw5cV3xeDwCiRpo6MWHdVKc694qqraN8XQ3XLi1AA==",
   "success": true,
-  "projectFilePath": "/Users/Gui/Downloads/ProjetoSamuraiSquad-6/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
+  "projectFilePath": "/Users/Gui/Downloads/ProjectoSamuraiSquad/ProjectoSamuraiSquad/ProjectoSamuraiSquad.csproj",
   "expectedPackageFiles": [
     "/Users/Gui/.nuget/packages/bouncycastle.cryptography/2.1.1/bouncycastle.cryptography.2.1.1.nupkg.sha512",
     "/Users/Gui/.nuget/packages/mailkit/4.0.0/mailkit.4.0.0.nupkg.sha512",
